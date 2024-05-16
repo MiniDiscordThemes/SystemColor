@@ -1,9 +1,9 @@
-name: Release
+name: Bundle and release theme
 
 on:
   push:
     tags:
-      - "v*"
+      - v*
 
 jobs:
   release:
@@ -16,9 +16,25 @@ jobs:
       - name: Checkout theme
         uses: actions/checkout@v4
 
-      - name: Release .theme.css
+      - name: Setup node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 21
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: latest
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Build and bundle theme into .asar
+        run: pnpm run build:rp
+
+      - name: Release bundled asar, json, and theme.css
         uses: ncipollo/release-action@v1
         with:
-          artifacts: "*.theme.css"
+          artifacts: bundle/*, *.theme.css
           makeLatest: true
           generateReleaseNotes: true
