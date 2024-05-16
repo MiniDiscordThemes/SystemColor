@@ -1,6 +1,8 @@
 @use "sass:list";
 @use "sass:math";
 
+@use "./vars" as *;
+
 // Inputs:
 //   $hsl: colors set by Discord
 //   $preserveSat: if true preserve provided saturation
@@ -30,5 +32,5 @@
 
     // Has to be done as string interpolation because / being interpreted as division instead of separator
     // Bug in Sass 1.x (to be fixed in 2.0 by enforcing division in calc() only)
-    @return "hsl(from var(--os-accent-color) calc(h + #{$huediff}) calc(s * #{$satdiff}) #{$lum} / #{$opacity})";
+    @return "hsl(from var(#{$origin}) calc(h + #{$huediff}) calc(s * #{$satdiff}) #{$lum} / #{$opacity})";
 }

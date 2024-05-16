@@ -14,7 +14,5 @@
 
 /* See https://github.com/MiniDiscordThemes/Template#customisation for customisation settings. */
 :root {
-    --temp-bg-color: #000;
-    --temp-scanline: block;
-    --temp-flicker: none;
+    --systemcolor-base: var(--os-accent-color);
 }
