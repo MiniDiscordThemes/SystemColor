@@ -1,0 +1,24 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+jobs:
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout theme
+        uses: actions/checkout@v4
+
+      - name: Release .theme.css
+        uses: ncipollo/release-action@v1
+        with:
+          artifacts: "*.theme.css"
+          makeLatest: true
+          generateReleaseNotes: true

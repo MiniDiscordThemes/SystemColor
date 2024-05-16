@@ -1,7 +1,7 @@
 {
   "name": "systemcolor-discord-theme",
-  "version": "0.1.0",
-  "description": "A Discord recolor based on your system color.",
+  "version": "1.0.0",
+  "description": "Recolours Discord based on your system colour.",
   "repository": "github:MiniDiscordThemes/SystemColor",
   "author": "Saltssaumure <themes@saltssaumure.net>",
   "license": "MIT",
