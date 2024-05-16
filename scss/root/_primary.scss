@@ -1,0 +1,32 @@
+@use "../func" as *;
+
+// Primary colours (white -> black)
+:root {
+    --primary-100: #{adjust(0 0% 97.6%)};
+    --primary-130: #{adjust(220 13% 95.5%)};
+    --primary-160: #{adjust(210 11.1% 92.9%)};
+    --primary-200: #{adjust(216 9.8% 90%)};
+    --primary-230: #{adjust(210 9.1% 87.1%)};
+    --primary-260: #{adjust(214 8.4% 83.7%)};
+    --primary-300: #{adjust(210 9.3% 78.8%)};
+    --primary-330: #{adjust(215 8.8% 73.3%)};
+    --primary-345: #{adjust(214 8.4% 67.5%)};
+    --primary-360: #{adjust(214 8.1% 61.2%)};
+    --primary-400: #{adjust(223 5.8% 52.9%)};
+    --primary-430: #{adjust(229 4.8% 44.9%)};
+    --primary-460: #{adjust(228 5.2% 38%)};
+    --primary-500: #{adjust(228 6% 32.5%)};
+    --primary-530: #{adjust(227 6.5% 27.3%)};
+    --primary-560: #{adjust(225 6.7% 23.5%)};
+    --primary-600: #{adjust(223 6.7% 20.6%)};
+    --primary-630: #{adjust(220 6.5% 18%)};
+    --primary-645: #{adjust(220 7% 16.9%)};
+    --primary-660: #{adjust(228 6.7% 14.7%)};
+    --primary-700: #{adjust(225 6.3% 12.5%)};
+    --primary-730: #{adjust(225 7.1% 11%)};
+    --primary-760: #{adjust(220 6.4% 9.2%)};
+    --primary-800: #{adjust(220 8.1% 7.3%)};
+    --primary-830: #{adjust(240 4% 4.9%)};
+    --primary-860: #{adjust(240 7.7% 2.5%)};
+    --primary-900: #{adjust(0 0% 0.8%)};
+}

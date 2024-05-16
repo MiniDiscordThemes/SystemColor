@@ -1,0 +1,5 @@
+@use "../vars" as *;
+
+:root {
+    #{$origin}: var(--os-accent-color);
+}

@@ -1,19 +1,20 @@
-[screenshot]:       https://cdn.discordapp.com/attachments/946226984005025835/1140494116451532810/SystemColor1.png
-[light]:            https://cdn.discordapp.com/attachments/946226984005025835/1140494116451532810/SystemColor1.png
-[dark]:             https://cdn.discordapp.com/attachments/946226984005025835/1140494116451532810/SystemColor1.png
+[blue-dark]:        https://minidiscordthemes.github.io/SystemColor/preview/blue-dark.avif
+[blue-light]:       https://minidiscordthemes.github.io/SystemColor/preview/blue-light.avif
+[brown-dark]:       https://minidiscordthemes.github.io/SystemColor/preview/brown-dark.avif
+[brown-light]:      https://minidiscordthemes.github.io/SystemColor/preview/brown-light.avif
+[green-dark]:       https://minidiscordthemes.github.io/SystemColor/preview/green-dark.avif
+[green-light]:      https://minidiscordthemes.github.io/SystemColor/preview/green-light.avif
 
 [css-color]:        https://developer.mozilla.org/en-US/docs/Web/CSS/color_value
 [discord]:          https://discord.gg/uy8nKQVatp
 
 [BetterDiscord]:    https://betterdiscord.app/
-[Replugged]:        https://replugged.dev/
 [Vencord]:          https://github.com/Vendicated/Vencord
 
 [shield-donate]:    https://img.shields.io/badge/Donate-ko--fi-orange?style=flat-square&logo=kofi&logoColor=orange
 [ko-fi]:            https://ko-fi.com/saltssaumure "Buy me a coffee!"
 
 [shield-bd-dl]:     https://img.shields.io/github/downloads/MiniDiscordThemes/SystemColor/SystemColor.theme.css?color=purple&label=Downloads&style=flat-square
-[shield-asar-dl]:   https://img.shields.io/github/downloads/MiniDiscordThemes/SystemColor/net.saltssaumure.SystemColor.asar?color=purple&label=Downloads&style=flat-square
 [shield-repo-size]: https://img.shields.io/github/repo-size/MiniDiscordThemes/SystemColor?label=Repository&style=flat-square "Total size"
 
 [github]:           https://github.com/MiniDiscordThemes/SystemColor
@@ -30,23 +31,15 @@
 
 ***A Discord recolor based on your system color.***
 
-![Screenshot of SystemColor applied to Discord][screenshot]
-
-| Light mode                                                        | Dark mode                                                       |
-| ----------------------------------------------------------------- | --------------------------------------------------------------- |
-| ![Screenshot of SystemColor light mode applied to Discord][light] | ![Screenshot of SystemColor dark mode applied to Discord][dark] |
+| Dark mode                                          | Light mode                                           |
+| -------------------------------------------------- | ---------------------------------------------------- |
+| ![SystemColor in blue with dark mode][blue-dark]   | ![SystemColor in blue with light mode][blue-light]   |
+| ![SystemColor in brown with dark mode][brown-dark] | ![SystemColor in brown with light mode][brown-light] |
+| ![SystemColor in green with dark mode][green-dark] | ![SystemColor in green with light mode][green-light] |
 
 ## Installation
 
-### [BetterDiscord][BetterDiscord]
-1. Download `SystemColor.theme.css`:
-    <!-- - [BetterDiscord store][release-bd] -->
-    - [GitHub][release-bd-gh]
-2. Place the file in the themes folder:
-    - `Settings` > `BetterDiscord` > `Themes` > `Open Themes Folder`
-3. Toggle on the theme card.
-
-### [Vencord][Vencord]
+### [Vencord][Vencord] (recommended)
 #### Local
 1. Download `SystemColor.theme.css`:
     - [BetterDiscord store][release-bd]
@@ -58,21 +51,19 @@
 1. Paste the link in `Settings` > `Vencord` > `Themes` > `Online Themes`:
     - `https://minidiscordthemes.github.io/SystemColor/SystemColor.theme.css`
 
+### [BetterDiscord][BetterDiscord]
+BetterDiscord does not currently detect your system color, however this theme can still be used and customised with a manually set color.
+1. Download `SystemColor.theme.css`:
+    - [GitHub][release-bd-gh]
+2. Place the file in the themes folder:
+    - `Settings` > `BetterDiscord` > `Themes` > `Open Themes Folder`
+3. Toggle on the theme card.
+
 ## Customisation
 
-| Description                    | Variable name     | Valid values                            | Default value |
-| ------------------------------ | ----------------- | --------------------------------------- | ------------- |
-| Background colour              | `--temp-bg-color` | Any [CSS-recognised][css-color] colour. | #000          |
-| &#9936; Moving scanline on/off | `--temp-scanline` | `block` (on) or `none` (off).           | `block`       |
-| &#9888; Screen flicker on/off  | `--temp-flicker`  | `flicker` (on) or `none` (off).         | `none`        |
-
-- &#9936; This effect is performance-intensive.
-- &#9888; This is a fast flickering effect and may not be suitable for those with photosensitive epilepsy.
-
-### BetterDiscord
-1. Open `Settings` > `BetterDiscord` > `Themes`.
-2. Click the pencil icon on this theme.
-3. Edit the variable values and save changes.
+| Variable name        | Valid values            | Default value (Vencord)  | Default value (Other) |
+| -------------------- | ----------------------- | ------------------------ | --------------------- |
+| `--systemcolor-base` | Any [color][css-color]. | `var(--os-accent-color)` | `cyan`                |
 
 ### Vencord
 #### Local
@@ -83,6 +74,11 @@
 1. `Enable Custom CSS` in `Settings` > `Vencord` > `Vencord` and click `Open QuickCSS File`.
 2. Copy and paste lines 15-20 of [`SystemColor.theme.css`][.theme.css].
 3. Edit the variable values.
+
+### BetterDiscord
+1. Open `Settings` > `BetterDiscord` > `Themes`.
+2. Click the pencil icon on this theme.
+3. Edit the variable values and save changes.
 
 ## License
 [MIT License][license]

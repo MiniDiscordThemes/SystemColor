@@ -1,0 +1,9 @@
+@use "../vars" as *;
+
+// Fallback to cyan if --os-accent-color is not set
+// or invalid user input given
+@property #{$origin} {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: cyan;
+}
