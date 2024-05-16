@@ -1,0 +1,3 @@
+@function lum($multiplier) {
+    @return oklch(from var(--os-accent-color) calc(l * $multiplier) c h);
+}

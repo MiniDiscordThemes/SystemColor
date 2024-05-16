@@ -1,8 +1,0 @@
-@use "../top/default" as *;
-
-:root {
-    // Default values of user-editable variables in .theme.css
-    // Mapping from CSS variable to SCSS variable
-    --temp-bg-color: #{$background-color};
-    --temp-bg-color-2: #{$background-color-2};
-}
