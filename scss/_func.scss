@@ -1,12 +1,24 @@
+@use "sass:list";
 
+@function adjust($hsl, $preserveSat: false) {
+    $hue: nth($hsl, 1);
+    $sat: nth($hsl, 2);
+    $lum: nth($hsl, 3);
+    $opacity: 1;
+    @if list.length($hsl) == 4 {
+        $opacity: nth($hsl, 4);
+    }
 
-
-@function realhsl($hue, $sat, $lum, $opacity: 1) {
-    // eg. 240, 7.7%, 2.5%
+    // eg. 240 7.7% 2.5%
     // hue: 210-240 (225 +- 15)
     // sat: 0-13% (we want to expand this to 0-100%)
     // lum: 0-100%
+
     $huediff: $hue - 225;
     $normsat: calc($sat * (100% / 13%));
+    @if $preserveSat {
+        $normsat: $sat;
+    }
+
     @return hsl(from var(--os-accent-color) calc(h + $huediff) $normsat $lum / $opacity);
 }
