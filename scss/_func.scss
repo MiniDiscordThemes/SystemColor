@@ -1,3 +1,12 @@
+
+
+
 @function realhsl($hue, $sat, $lum, $opacity: 1) {
-    @return hsl(from var(--os-accent-color) $hue $sat $lum / $opacity);
+    // eg. 240, 7.7%, 2.5%
+    // hue: 210-240 (225 +- 15)
+    // sat: 0-13% (we want to expand this to 0-100%)
+    // lum: 0-100%
+    $huediff: $hue - 225;
+    $normsat: calc($sat * (100% / 13%));
+    @return hsl(from var(--os-accent-color) calc(h + $huediff) $normsat $lum / $opacity);
 }
