@@ -1,3 +1,3 @@
-@function lum($multiplier, $opacity: 1) {
-    @return oklch(from var(--os-accent-color) calc(l * $multiplier) c h / $opacity);
+@function realhsl($hue, $sat, $lum, $opacity: 1) {
+    @return hsl(from var(--os-accent-color) $hue $sat $lum / $opacity);
 }
