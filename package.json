@@ -1,26 +1,22 @@
 {
-  "name": "template-discord-theme",
-  "version": "1.1.2",
-  "description": "A template Discord theme for multiple client mod support.",
-  "repository": "github:MiniDiscordThemes/Template",
+  "name": "systemcolor-discord-theme",
+  "version": "0.1.0",
+  "description": "A Discord recolor based on your system color.",
+  "repository": "github:MiniDiscordThemes/SystemColor",
   "author": "Saltssaumure <themes@saltssaumure.net>",
   "license": "MIT",
   "private": true,
   "type": "module",
   "scripts": {
     "dev": "bd-scss dev",
-    "dev:rp": "replugged build theme --watch",
     "dev:vc": "bd-scss dev:vc",
     "dev:vt": "bd-scss dev:vt",
     "build:bd": "bd-scss build",
-    "build:rp": "replugged bundle theme",
     "lint": "prettier ./scss --check",
-    "lint:fix": "prettier ./scss --write --log-level warn",
-    "release": "replugged release"
+    "lint:fix": "prettier ./scss --write --log-level warn"
   },
   "devDependencies": {
-    "prettier": "^3.1.1",
-    "replugged": "^4.7.7",
-    "salt-bd-scss": "^1.2.1"
+    "prettier": "^3.2.5",
+    "salt-bd-scss": "^1.2.2"
   }
 }

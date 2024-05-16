@@ -1,16 +1,16 @@
 /**
- * @name Template
+ * @name SystemColor
  * @author Saltssaumure
  * @authorLink https://github.com/Saltssaumure
- * @description A template theme for multiple client mod support.
+ * @description Recolor based on your system color.
  * @license MIT
- * @version 1.0
+ * @version 0.1
  * @invite uy8nKQVatp
- * @source https://github.com/MiniDiscordThemes/Template
+ * @source https://github.com/MiniDiscordThemes/SystemColor
  * @donate https://ko-fi.com/saltssaumure
 */
 
-@import url("https://minidiscordthemes.github.io/Template/temp.min.css");
+@import url("https://minidiscordthemes.github.io/SystemColor/sys.min.css");
 
 /* See https://github.com/MiniDiscordThemes/Template#customisation for customisation settings. */
 :root {
