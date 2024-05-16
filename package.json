@@ -1,0 +1,26 @@
+{
+  "name": "template-discord-theme",
+  "version": "1.1.2",
+  "description": "A template Discord theme for multiple client mod support.",
+  "repository": "github:MiniDiscordThemes/Template",
+  "author": "Saltssaumure <themes@saltssaumure.net>",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "bd-scss dev",
+    "dev:rp": "replugged build theme --watch",
+    "dev:vc": "bd-scss dev:vc",
+    "dev:vt": "bd-scss dev:vt",
+    "build:bd": "bd-scss build",
+    "build:rp": "replugged bundle theme",
+    "lint": "prettier ./scss --check",
+    "lint:fix": "prettier ./scss --write --log-level warn",
+    "release": "replugged release"
+  },
+  "devDependencies": {
+    "prettier": "^3.1.1",
+    "replugged": "^4.7.7",
+    "salt-bd-scss": "^1.2.1"
+  }
+}
