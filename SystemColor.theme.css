@@ -2,9 +2,9 @@
  * @name SystemColor
  * @author Saltssaumure
  * @authorLink https://github.com/Saltssaumure
- * @description Recolor based on your system color.
+ * @description Recolour based on your system colour.
  * @license MIT
- * @version 0.1
+ * @version 1.0
  * @invite uy8nKQVatp
  * @source https://github.com/MiniDiscordThemes/SystemColor
  * @donate https://ko-fi.com/saltssaumure
@@ -12,7 +12,7 @@
 
 @import url("https://minidiscordthemes.github.io/SystemColor/sys.min.css");
 
-/* See https://github.com/MiniDiscordThemes/Template#customisation for customisation settings. */
+/* See https://github.com/MiniDiscordThemes/SystemColor#customisation for customisation settings. */
 :root {
     --systemcolor-base: var(--os-accent-color);
 }

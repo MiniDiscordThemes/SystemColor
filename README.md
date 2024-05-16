@@ -29,7 +29,7 @@
 [![Theme GitHub downloads][shield-bd-dl]][release-bd-gh]
 [![Total repository size][shield-repo-size]][github]
 
-***A Discord recolor based on your system color.***
+***Recolours Discord based on your system colour.***
 
 | Dark mode                                          | Light mode                                           |
 | -------------------------------------------------- | ---------------------------------------------------- |
@@ -42,7 +42,6 @@
 ### [Vencord][Vencord] (recommended)
 #### Local
 1. Download `SystemColor.theme.css`:
-    - [BetterDiscord store][release-bd]
     - [GitHub][release-bd-gh]
 2. Place the file in the themes folder:
     - `Settings` > `Vencord` > `Themes` > `Local Themes` > `Open Themes Folder`
@@ -61,9 +60,9 @@ BetterDiscord does not currently detect your system color, however this theme ca
 
 ## Customisation
 
-| Variable name        | Valid values            | Default value (Vencord)  | Default value (Other) |
-| -------------------- | ----------------------- | ------------------------ | --------------------- |
-| `--systemcolor-base` | Any [color][css-color]. | `var(--os-accent-color)` | `cyan`                |
+| Variable name        | Valid values             | Default value (Vencord)  | Default value (Other) |
+| -------------------- | ------------------------ | ------------------------ | --------------------- |
+| `--systemcolor-base` | Any [colour][css-color]. | `var(--os-accent-color)` | `cyan`                |
 
 ### Vencord
 #### Local
@@ -72,7 +71,7 @@ BetterDiscord does not currently detect your system color, however this theme ca
 3. Edit the variable values and save.
 #### Online
 1. `Enable Custom CSS` in `Settings` > `Vencord` > `Vencord` and click `Open QuickCSS File`.
-2. Copy and paste lines 15-20 of [`SystemColor.theme.css`][.theme.css].
+2. Copy and paste lines 15-18 of [`SystemColor.theme.css`][.theme.css].
 3. Edit the variable values.
 
 ### BetterDiscord
