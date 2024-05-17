@@ -1,6 +1,6 @@
 @use "../func" as *;
 
-// Primary colours (white -> black)
+// Primary desaturated blurple colours (near white -> near black)
 :root {
     --primary-100: #{adjust(0 0% 97.6%)};
     --primary-130: #{adjust(220 13% 95.5%)};
