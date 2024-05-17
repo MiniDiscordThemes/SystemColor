@@ -19,9 +19,9 @@
 }
 
 .theme-dark {
-    --systemcolor-bg-image: linear-gradient(to right, var(--primary-700), var(--primary-800))
+    --systemcolor-bg-image: linear-gradient(to right, var(--primary-700), var(--primary-800));
 }
 
 .theme-light {
-    --systemcolor-bg-image: linear-gradient(to right, var(--primary-200), var(--primary-100))
+    --systemcolor-bg-image: linear-gradient(to right, var(--primary-200), var(--primary-100));
 }
