@@ -1,0 +1,16 @@
+// Inputs
+
+// Toggle switch
+.control__6a084 {
+    @at-root .container__2ed72 {
+        color: var(--primary-400);
+        &.checked__36fdc {
+            color: var(--green-360);
+        }
+
+        background-color: currentColor !important;
+        path {
+            fill: currentColor;
+        }
+    }
+}

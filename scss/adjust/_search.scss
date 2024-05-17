@@ -1,0 +1,44 @@
+// Message search
+
+// Search pills
+// Hardcoded colours replaced by vars of closest luminosity match
+// #34383d / hsl(213, 7.96%, 22.16%) --> var(--primary-600)
+.theme-dark :is(.searchAnswer__2ccaf, .searchFilter_dbda51) {
+    background-color: var(--primary-600);
+}
+
+// Search options
+// Hardcoded colours replaced by vars of closest luminosity match
+// #caccce / hsl(210, 4%, 80%) --> var(--primary-300)
+// #5d6269 / hsl(215, 6%, 39%) --> var(--primary-460)
+.theme-dark {
+    --search-popout-option-fade: linear-gradient(90deg, transparent 0%, var(--primary-800) 80%);
+    --search-popout-option-fade-hover: linear-gradient(90deg, transparent 0%, var(--primary-600) 50%);
+    --search-popout-option-user-nickname: var(--text-normal);
+    --search-popout-option-user-username: var(--text-muted);
+    --search-popout-option-filter-text: var(--primary-400);
+    --search-popout-option-non-text-color: var(--primary-300);
+    --search-popout-option-filter-color: var(--primary-300);
+    --search-popout-option-answer-color: var(--primary-300);
+    --search-popout-date-picker-border: 1px solid var(--primary-660);
+    --search-popout-date-picker-hint-text: var(--primary-300);
+    --search-popout-date-picker-hint-value-text: var(--white-500);
+    --search-popout-date-picker-hint-value-background: var(--brand-experiment);
+    --search-popout-date-picker-hint-value-background-hover: var(--brand-experiment-430);
+}
+
+.theme-light {
+    --search-popout-option-fade: linear-gradient(90deg, transparent 0%, var(--white-500) 80%);
+    --search-popout-option-fade-hover: linear-gradient(90deg, transparent 0%, var(--primary-160) 50%);
+    --search-popout-option-user-nickname: var(--text-normal);
+    --search-popout-option-user-username: var(--text-muted);
+    --search-popout-option-filter-text: var(--primary-300);
+    --search-popout-option-non-text-color: var(--primary-460);
+    --search-popout-option-filter-color: var(--primary-300);
+    --search-popout-option-answer-color: var(--primary-500);
+    --search-popout-date-picker-border: 1px solid var(--primary-200);
+    --search-popout-date-picker-hint-text: var(--primary-300);
+    --search-popout-date-picker-hint-value-text: var(--white-500);
+    --search-popout-date-picker-hint-value-background: var(--brand-experiment);
+    --search-popout-date-picker-hint-value-background-hover: var(--brand-experiment-400);
+}
