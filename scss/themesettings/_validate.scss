@@ -4,6 +4,6 @@
 // or invalid user input given
 @property #{$origin} {
     syntax: "<color>";
-    inherits: false;
+    inherits: true;
     initial-value: cyan;
 }
