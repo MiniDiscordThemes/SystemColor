@@ -1,5 +1,18 @@
-@use "../vars" as *;
+// Default theme settings
 
+// Universal
 :root {
-    #{$origin}: var(--os-accent-color);
+    --systemcolor-base: var(--os-accent-color);
+    --systemcolor-bg-blur: 0px;
+
+    // Not revealed to the user
+    --systemcolor-bg-position: center/cover no-repeat;
+}
+
+// By mode
+.theme-dark {
+    --systemcolor-bg-image: linear-gradient(to right, var(--primary-700), var(--primary-800));
+}
+.theme-light {
+    --systemcolor-bg-image: linear-gradient(to right, var(--primary-200), var(--primary-100));
 }

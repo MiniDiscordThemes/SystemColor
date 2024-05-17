@@ -1,5 +1,6 @@
 @use "../func" as *;
 
+// Originally blurple colours
 :root {
     --brand-100: #{adjust(240 77.8% 98.2%, true)};
     --brand-130: #{adjust(236 87.5% 96.9%, true)};

@@ -1,0 +1,13 @@
+// Background
+
+.bg__12180 {
+    // Background image
+    &::before {
+        content: "";
+        display: block;
+        background: var(--systemcolor-bg-image) var(--systemcolor-bg-position);
+        filter: blur(var(--systemcolor-bg-blur));
+        width: 100vw;
+        height: 100vh;
+    }
+}

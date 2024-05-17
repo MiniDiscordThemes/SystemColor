@@ -4,8 +4,11 @@
 [brown-light]:      https://minidiscordthemes.github.io/SystemColor/preview/brown-light.avif
 [green-dark]:       https://minidiscordthemes.github.io/SystemColor/preview/green-dark.avif
 [green-light]:      https://minidiscordthemes.github.io/SystemColor/preview/green-light.avif
+[custom]:           https://minidiscordthemes.github.io/SystemColor/preview/custom.avif
 
 [css-color]:        https://developer.mozilla.org/en-US/docs/Web/CSS/color_value
+[css-length]:       https://developer.mozilla.org/en-US/docs/Web/CSS/length
+[css-image]:        https://developer.mozilla.org/en-US/docs/Web/CSS/image
 [discord]:          https://discord.gg/uy8nKQVatp
 
 [BetterDiscord]:    https://betterdiscord.app/
@@ -78,9 +81,23 @@ BetterDiscord does not currently detect your system color, however this theme ca
 
 ## Customisation
 
-| Variable name        | Valid values             | Default value (Vencord)  | Default value (Other) |
-| -------------------- | ------------------------ | ------------------------ | --------------------- |
-| `--systemcolor-base` | Any [colour][css-color]. | `var(--os-accent-color)` | `cyan`                |
+![SystemColor customised with background image][custom]
+<details>
+    <summary>Customised screenshot snippet</summary>
+
+```css
+.theme-dark {
+    --systemcolor-base: #f4f0f8a8;
+    --systemcolor-bg-image: url(https://discord.com/assets/68691bc51a5e2da8e8cf.svg);
+}
+```
+</details>
+
+| Variable name            | Description      | Valid values                      | Default value (Vencord)  | Default value (Other)  |
+| ------------------------ | ---------------- | --------------------------------- | ------------------------ | ---------------------- |
+| `--systemcolor-base`     | Base colour      | Any [colour][css-color].          | `var(--os-accent-color)` | `cyan`                 |
+| `--systemcolor-bg-image` | Background image | Any [image][css-image] or `none`. | `linear-gradient(...)`   | `linear-gradient(...)` |
+| `--systemcolor-bg-blur`  | Background blur  | Any [length][css-length].         | `0px`                    | `0px`                  |
 
 ### Vencord
 #### Local
@@ -89,7 +106,7 @@ BetterDiscord does not currently detect your system color, however this theme ca
 3. Edit the variable values and save.
 #### Online
 1. `Enable Custom CSS` in `Settings` > `Vencord` > `Vencord` and click `Open QuickCSS File`.
-2. Copy and paste lines 15-18 of [`SystemColor.theme.css`][.theme.css].
+2. Copy and paste lines 15-27 of [`SystemColor.theme.css`][.theme.css].
 3. Edit the variable values.
 
 ### BetterDiscord
@@ -100,7 +117,7 @@ BetterDiscord does not currently detect your system color, however this theme ca
 ### Replugged
 1. Enable `Automatically Apply Quick CSS` in `Settings` > `Replugged` > `General`.
 2. Open `Settings` > `Replugged` > `Quick CSS`.
-3. Copy and paste lines 15-18 of [`SystemColor.theme.css`][.theme.css].
+3. Copy and paste lines 15-27 of [`SystemColor.theme.css`][.theme.css].
 4. Edit the variable values and save.
 
 ## License

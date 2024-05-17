@@ -1,8 +1,6 @@
 @use "sass:list";
 @use "sass:math";
 
-@use "./vars" as *;
-
 // Inputs:
 //   $hsl: colors set by Discord
 //   $preserveSat: if true preserve provided saturation
@@ -10,9 +8,9 @@
     $hue: nth($hsl, 1);
     $sat: nth($hsl, 2);
     $lum: nth($hsl, 3);
-    $opacity: 1;
+    $alpha: 1;
     @if list.length($hsl) == 4 {
-        $opacity: nth($hsl, 4);
+        $alpha: nth($hsl, 4);
     }
 
     // eg. 240 7.7% 2.5%
@@ -27,10 +25,10 @@
         $sat: calc($sat * (100% / 13%));
     }
     // Convert into number because calc() requires one of the operands to be unitless
-    // In hsl(), saturation s (and luminance l) from origin color is already a percentage
+    // In hsl(), saturation s and luminance l from origin color is already a percentage
     $satdiff: math.div($sat, 100%);
 
     // Has to be done as string interpolation because / being interpreted as division instead of separator
     // Bug in Sass 1.x (to be fixed in 2.0 by enforcing division in calc() only)
-    @return "hsl(from var(#{$origin}) calc(h + #{$huediff}) calc(s * #{$satdiff}) #{$lum} / #{$opacity})";
+    @return "hsl(from var(--systemcolor-base) calc(h + #{$huediff}) calc(s * #{$satdiff}) #{$lum} / calc(alpha * #{$alpha}))";
 }
