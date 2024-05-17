@@ -6,6 +6,8 @@
 [green-light]:      https://minidiscordthemes.github.io/SystemColor/preview/green-light.avif
 
 [css-color]:        https://developer.mozilla.org/en-US/docs/Web/CSS/color_value
+[css-length]:       https://developer.mozilla.org/en-US/docs/Web/CSS/length
+[css-image]:        https://developer.mozilla.org/en-US/docs/Web/CSS/image
 [discord]:          https://discord.gg/uy8nKQVatp
 
 [BetterDiscord]:    https://betterdiscord.app/
@@ -78,9 +80,11 @@ BetterDiscord does not currently detect your system color, however this theme ca
 
 ## Customisation
 
-| Variable name        | Valid values             | Default value (Vencord)  | Default value (Other) |
-| -------------------- | ------------------------ | ------------------------ | --------------------- |
-| `--systemcolor-base` | Any [colour][css-color]. | `var(--os-accent-color)` | `cyan`                |
+| Variable name            | Valid values                      | Default value (Vencord)  | Default value (Other)  |
+| ------------------------ | --------------------------------- | ------------------------ | ---------------------- |
+| `--systemcolor-base`     | Any [colour][css-color].          | `var(--os-accent-color)` | `cyan`                 |
+| `--systemcolor-blur`     | Any [length][css-length].         | `0px`                    | `0px`                  |
+| `--systemcolor-bg-image` | Any [image][css-image] or `none`. | `linear-gradient(...)`   | `linear-gradient(...)` |
 
 ### Vencord
 #### Local

@@ -1,9 +1,31 @@
-@use "../vars" as *;
+// Validate user input for theme settings
 
 // Fallback to cyan if --os-accent-color is not set
 // or invalid user input given
-@property #{$origin} {
+@property --systemcolor-base {
     syntax: "<color>";
     inherits: true;
     initial-value: cyan;
+}
+
+// Fallback to 0px if invalid user input given
+@property --systemcolor-bg-blur {
+    syntax: "<length>";
+    inherits: true;
+    initial-value: 0px;
+}
+
+// Not revealed to the user
+// Fallback to center/cover no-repeat if invalid user input given
+@property --systemcolor-bg-position {
+    syntax: "*";
+    inherits: true;
+    initial-value: center/cover no-repeat;
+}
+
+// Fallback to none if invalid user input given
+@property --systemcolor-bg-image {
+    syntax: "<image> | none";
+    inherits: true;
+    initial-value: none;
 }
